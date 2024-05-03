@@ -4,11 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
+    <script src="http://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <div class="container mt-5">
+        <p id="description"><b>A calculator task has been completed with the HTML, CSS, Bootstrap and JS</b></p>
+        <h1 id="title" class="text-center mb-4">Calculator</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6"> <input type="text" id="result" class="form-control mb-3" disabled>
+                <div class="btn-group btn-group-lg w-100" role="group"> <button type="button" id="1"
+                        class="btn btn-secondary number">1</button> <button type="button" id="2"
+                        class="btn btn-secondary number">2</button> <button type="button" id="3"
+                        class="btn btn-secondary number">3</button> <button type="button" id="add"
+                        class="btn btn-secondary operator">+</button> </div>
+                <div class="btn-group btn-group-lg w-100" role="group"> <button type="button" id="4"
+                        class="btn btn-secondary number">4</button> <button type="button" id="5"
+                        class="btn btn-secondary number">5</button> <button type="button" id="6"
+                        class="btn btn-secondary number">6</button> <button type="button" id="subtract"
+                        class="btn btn-secondary operator">-</button> </div>
+                <div class="btn-group btn-group-lg w-100" role="group"> <button type="button" id="7"
+                        class="btn btn-secondary number">7</button> <button type="button" id="8"
+                        class="btn btn-secondary number">8</button> <button type="button" id="9"
+                        class="btn btn-secondary number">9</button> <button type="button"
+                        class="btn btn-secondary operator">*</button> </div>
+                <div class="btn-group btn-group-lg w-100" role="group"> <button type="button" id="0"
+                        class="btn btn-secondary number">0</button> <button type="button" id="/"
+                        class="btn btn-secondary operator">/</button> <button type="button" id="%"
+                        class="btn btn-secondary operator">%</button> <button type="button" id="equal"
+                        class="btn btn-secondary" onclick="calculate()">=</button> </div> <button type="button"
+                    id="clear" class="btn btn-danger w-100 mt-3" onclick="clearDisplay()">Clear</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
